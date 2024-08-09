@@ -375,9 +375,9 @@ span{
 
 
 @media (max-width: 1025px){
-    *{
+    /* *{
         overflow: hidden;
-    }
+    } */
     
     .home{
         animation: none;
