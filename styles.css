@@ -73,9 +73,9 @@ body{
     /* box-shadow: 0 0 8px 8px var(--top-font); */
 }
 
-/* #demo{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
+#demo{
+    font-family: 'Times New Roman', Times, sans-serif
+}
 
 #menuIcon{
     font-size: 3.6rem;
@@ -180,8 +180,8 @@ section{
     font-family:'Times New Roman', Times, serif;
     font-size: 4rem;
 }
-/* 
-.about{
+
+/* .about{
     color: #ffffff;..
     font-size: 3.3rem;
     display: flex;..
@@ -194,9 +194,7 @@ section{
     filter:blur();
     max-width: 100%;
 } */
-
-/* 
-.about {
+/* .about {
     color: #ffffff;
     display: flex;
     background-image: url(bg_abt.jpg);
@@ -209,33 +207,28 @@ section{
     max-width:80vw;
     margin-inline: auto;
 
-}
-
-.about-content{
+}*/
+/*.about-content{
     text-align: right;
     animation: fade-in linear;
     animation-timeline: view();
-}
-
-.about .wrapper{
+}*/
+/*.about .wrapper{
     display: flex;
     max-width: 90vw;
     margin-inline: auto;
     background-color: yellowgreen;
-}
-
-.about h3{
+}*/
+/*.about h3{
     white-space: nowrap;
-}
-
-.about img{
+}*/
+/*.about img{
     animation: fade-in linear;
     animation-timeline: view();
     transition: 0.3s ease;
     width: 24vw;
-}
-
-.about img:hover{
+}*/
+/*.about img:hover{
     scale: 1.3;
 } */
 
@@ -252,7 +245,6 @@ section{
     font-size: 3.3rem;
     max-width: 100vw;
     margin-inline: auto;
-    /* background-color: hotpink; */
     overflow: hidden;
 }
 
@@ -308,14 +300,9 @@ span{
     color: var(--top-font);
 }
 
-.scroll {
-    height: 5000px;
-    width: 100px; 
-    background-color:var(--top-font);  
-}
-
 .faq{
     display: flex;
+    justify-content: space-between;
 }
 .embossed{
     border-radius: 5%;
@@ -339,6 +326,46 @@ span{
 
 .faq .embossed h2{
     margin-inline: auto;
+}
+
+
+.footer{
+    height: 150px;
+    width: 1000px;
+    margin-inline: auto;
+    color: var(--second-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .social-icons{
+    display: flex;
+    text-align: center;
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+
+.social-icons a{ 
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50px; 
+    width: 50px;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--top-font);
+    border-radius: 50%;
+    color: var(--top-font);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: #ffffff;
+    background-color: var(--top-font);
+    transform: scale(1.1)translateY(-5px);
+    box-shadow: 0 0 25px var(--top-font);
 }
 
 @keyframes fade-in {
@@ -375,12 +402,10 @@ span{
 
 
 @media (max-width: 1025px){
-    /* *{
-        overflow: hidden;
-    } */
-    
     .home{
         animation: none;
+        /* background: transform: rotate(20deg); */
+        background-image: url(bg_phone.jpg);
     }
     
     #menuIcon{
@@ -416,4 +441,16 @@ span{
     .navbar .active{
         display: block;
     }
+
+    .faq{
+        flex-direction: column-reverse;
+    }
 }
+
+
+/* @media (max-width: 919px){
+    .home{
+        animation: none;
+        background-image: url(bg_phone.jpg);
+    }
+} */
