@@ -416,7 +416,7 @@ span{
         flex-direction: column-reverse;
         border: 2px dotted dodgerblue;
         padding-top: 14vh;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         grid-template-rows: repeat(6, clamp(190px, 15vw, 270px));
     }
 
