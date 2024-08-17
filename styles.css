@@ -417,13 +417,15 @@ span{
         border: 2px dotted dodgerblue;
         padding-top: 14vh;
         grid-template-columns: auto auto;
-        grid-template-rows: repeat(6, clamp(170px, 12vw, 270px));
+        grid-template-rows: repeat(6, clamp(170px, 13vw, 270px));
     }
 
     .embossed{
         margin-top: 20px;
         grid-template-rows: subgrid;
         grid-row: span 2;
+        padding-inline: 2vw;
+        
         /* border: 2px solid yellow; */
         
     }
