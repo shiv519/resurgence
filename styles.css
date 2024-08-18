@@ -392,8 +392,6 @@ span{
 
     .embossed{
         margin-top: 20px;
-        grid-template-rows: subgrid;
-        grid-row: span 2;
         padding-inline: 2vw;        
     }
 }
